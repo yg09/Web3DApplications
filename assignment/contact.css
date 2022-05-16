@@ -1,0 +1,63 @@
+#map{
+
+  width: 100%;
+  height: 400px;
+  margin-top: 50px;
+}
+
+
+label {
+  	display: block;
+  	font-weight: 100;
+  	margin: 0 0 8px 0;
+  	min-width: 50px;
+    font-family: 'Pattaya', sans-serif;
+}
+
+input, textarea {
+  	border: 1px solid #ccc;
+  	padding: 4px 0;
+  	width: 100%;
+  	-webkit-appearance: none;
+}
+
+input[type=submit] {
+  	background: #d62d20;
+  	border: 0;
+  	color: #fff;
+  	padding: 8px 16px;
+  	transition: background 0.2s;
+    font-size: 25px;
+    font-family: 'Pattaya', sans-serif;
+}
+
+input[type=submit]:not(:disabled):hover {
+  	background: #665f5f;
+}
+
+input[type=submit]:not(:disabled):active {
+  	background: #383;
+}
+
+input[disabled] {
+  	opacity: 0.5;
+}
+
+.container {
+  	background: #f1f1f1;
+  	box-shadow: 0 2px 40px #888;
+  	margin: auto;
+  	padding: 16px;
+    margin-top: 20px;
+  	max-width: 600px;
+}
+
+.form-group {
+  	margin-bottom: 16px;
+}
+
+input.ng-invalid.ng-dirty,
+textarea.ng-invalid.ng-dirty{
+  	border-color: red;
+  	box-shadow: 0 0 4px red;
+}

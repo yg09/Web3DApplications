@@ -1,0 +1,6 @@
+a.text-secondary:focus,
+a.text-secondary:hover {
+  text-decoration: none;
+  color: #d62d20;
+  }
+  

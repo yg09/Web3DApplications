@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Coca Cola for Web3D</title>
+<link rel="stylesheet" href="contact.css">
+<link rel="stylesheet" href="footer.css">
+<link rel="stylesheet" href="logo.css">
+<link rel="stylesheet" href="second_navigation.css">
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pattaya&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+  <header>
+    <div class="logo">
+        <h1>Coca Cola</h1>
+        <h2>enjoy</h2>
+
+    </div>
+  </header>
+
+  <body>
+
+  <ul>
+    <li><a class="active" href="index.html">Home</a></li>
+    <li><a href="pproduct.php">Products</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="download.html">Downloads</a></li>
+      <li><a href="reference.html">References</a></li>
+  </ul>
+
+  <div id="map"></div>
+
+  <div class="container" ng-app="ContactForm">
+	<form name="cf" ng-controller="cfController as cfCtrl" ng-submit="submitForm(cf.$valid)" novalidate>
+
+		<div class="form-group">
+			<label for="firstName">First Name *</label>
+			<input id="firstName" type="text" name="firstName" ng-model="firstName" required>
+		</div>
+
+    <div class="form-group">
+      <label for="lastName">Last name </label>
+      <input id="lastName" type="text" name="lastName" ng-model="lastName" required>
+    </div>
+
+		<div class="form-group">
+			<label for="email">Email *</label>
+			<input id="email" type="email" name="email">
+		</div>
+
+		<div class="form-group">
+			<label for="msg">Message</label>
+			<textarea id="msg" name="message" rows="4" ng-model="msg" required></textarea>
+		</div>
+
+		<input type="submit" value="Send" ng-disabled="cf.$invalid"/>
+
+	</form>
+</div>
+
+  <footer>
+    <div>
+      <div class="logoLinks">
+       <a href="https://www.facebook.com/cocacolabulgaria/?brand_redir=40796308305" class="fa fa-facebook"></a>
+       <a href="https://twitter.com/cocacola_gb" class="fa fa-twitter"></a>
+       <a href="https://www.instagram.com/cocacolaeu/?hl=en" class="fa fa-instagram"></a>
+       <a href="https://www.youtube.com/user/cocacolacompanyuk" class="fa fa-youtube"></a>
+      </div>
+      <div class="footerInFooter">
+       <a href="https://www.coca-cola.co.uk/privacy-policy" class="footerInFooterContent">Privacy Policy | </a>
+       <a href="https://www.coca-cola.co.uk/cookie-policy" class="footerInFooterContent">Cookie Policy | </a>
+       <a href="https://www.coca-cola.co.uk/tax-policy" class="footerInFooterContent">Tax Policy | </a>
+       <a href="https://www.coca-cola.co.uk/terms-of-use" class="footerInFooterContent">Terms of use | </a>
+       <a href="https://www.coca-cola.co.uk/content/dam/one/gb/en/pdf-files/Coca-Cola-GB-Modern-Slavery-Statement-2021_v2_1.pdf" class="footerInFooterContent"> Modern Slavery Statement</a>
+       <a class="copyRight"> © Web 3D Application Coca-Cola, all rights reserved</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+<script src="contact.js"></script>
+<script src="navigation.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&libraries=&v=weekly"
+async></script>
+</html>

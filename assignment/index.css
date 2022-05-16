@@ -1,0 +1,92 @@
+.nav{
+  margin-top: 100px;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 200px;
+  left: 0;
+  background-color: #d62d20;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.nav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #665f5f;
+  display: block;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  color: #f1f1f1;
+}
+
+.nav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .nav {padding-top: 15px;}
+  .nav a {font-size: 18px;}
+}
+
+.main{
+    margin-top: 150px;
+}
+
+.main button{
+  background-color: #d62d20;
+  color: black;
+  border: 2px solid #665f5f ;
+
+}
+
+.main button:hover{
+  background-color: #665f5f;
+  color: white;
+}
+
+
+.images {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.top-left{
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.top-right{
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+  font-size: 50px;
+  font-weight: bold;
+}
+
